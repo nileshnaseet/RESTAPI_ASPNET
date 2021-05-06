@@ -29,6 +29,7 @@ namespace BooksAPI.Controllers
         public IQueryable<BookDto> GetBooks()
         {
             //return db.Books.Select(x => getBookDto(x));
+            
             return db.Books.Include(x => x.Author).Select(getBookDto);
         }
 

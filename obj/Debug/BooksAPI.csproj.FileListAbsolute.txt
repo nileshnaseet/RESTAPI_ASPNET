@@ -144,3 +144,9 @@ C:\Nilesh\Knowledge Base\GitLab\RESTAPI_ASPNET\obj\Debug\BooksAPI.csproj.CoreCom
 C:\Nilesh\Knowledge Base\GitLab\RESTAPI_ASPNET\obj\Debug\BooksAPI.csproj.CopyComplete
 C:\Nilesh\Knowledge Base\GitLab\RESTAPI_ASPNET\obj\Debug\BooksAPI.dll
 C:\Nilesh\Knowledge Base\GitLab\RESTAPI_ASPNET\obj\Debug\BooksAPI.pdb
+C:\Nilesh\Knowledge Base\GitLab\RESTAPI_ASPNET\bin\Antlr3.Runtime.dll
+C:\Nilesh\Knowledge Base\GitLab\RESTAPI_ASPNET\bin\Microsoft.Web.Infrastructure.dll
+C:\Nilesh\Knowledge Base\GitLab\RESTAPI_ASPNET\bin\System.Web.Optimization.dll
+C:\Nilesh\Knowledge Base\GitLab\RESTAPI_ASPNET\bin\WebGrease.dll
+C:\Nilesh\Knowledge Base\GitLab\RESTAPI_ASPNET\bin\Antlr3.Runtime.pdb
+C:\Nilesh\Knowledge Base\GitLab\RESTAPI_ASPNET\bin\System.Web.Optimization.xml

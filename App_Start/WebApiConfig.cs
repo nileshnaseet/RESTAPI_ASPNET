@@ -29,5 +29,6 @@ namespace BooksAPI
             setting.ContractResolver = new CamelCasePropertyNamesContractResolver();
             setting.Formatting = Newtonsoft.Json.Formatting.Indented;
         }
+
     }
 }

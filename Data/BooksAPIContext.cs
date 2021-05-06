@@ -17,6 +17,7 @@ namespace BooksAPI.Data
     
         public BooksAPIContext() : base("name=BooksAPIContext")
         {
+            this.Database.Log = s => System.Diagnostics.Debug.WriteLine(s);
         }
 
         public System.Data.Entity.DbSet<BooksAPI.Models.Book> Books { get; set; }

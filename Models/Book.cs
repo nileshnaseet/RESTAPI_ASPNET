@@ -17,7 +17,9 @@ namespace BooksAPI.Models
         public DateTime PublishDate { get; set; }
         public string Description { get; set; }
         public int AuthorId { get; set; }
+
         [ForeignKey("AuthorId")]
-        public Author Author { get; set; }
+        // Add virtual to enable lazy loading
+        public virtual Author Author { get; set; }
     }
 }
