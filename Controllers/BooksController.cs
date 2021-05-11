@@ -17,6 +17,7 @@ using System.Linq.Expressions;
 namespace BooksAPI.Controllers
 {
     [RoutePrefix("api/books")]
+    [NotImplExceptionFilter]
     public class BooksController : ApiController
     {
         private BooksAPIContext db = new BooksAPIContext();
@@ -29,7 +30,7 @@ namespace BooksAPI.Controllers
         public IQueryable<BookDto> GetBooks()
         {
             //return db.Books.Select(x => getBookDto(x));
-            
+
             return db.Books.Include(x => x.Author).Select(getBookDto);
         }
 
@@ -91,6 +92,16 @@ namespace BooksAPI.Controllers
             var bookByAuthor = db.Books.Include(b => b.Author)
                         .Where(g => g.AuthorId == authorId)
                         .Select(getBookDto);
+
+            if (bookByAuthor.Count() == 0)
+            {
+                var resp = new HttpResponseMessage(HttpStatusCode.NotFound)
+                {
+                    Content = new StringContent(string.Format("No Author with ID = {0}", authorId)),
+                    ReasonPhrase = "Author ID Not Found"
+                };
+                throw new HttpResponseException(resp);
+            }
 
             return bookByAuthor;
         }

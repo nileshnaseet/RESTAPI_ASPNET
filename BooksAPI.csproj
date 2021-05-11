@@ -107,6 +107,7 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\BooksController.cs" />
+    <Compile Include="Controllers\NotImplExceptionFilterAttribute.cs" />
     <Compile Include="Data\BooksAPIContext.cs" />
     <Compile Include="DTOs\BookDetailDto.cs" />
     <Compile Include="DTOs\BookDto.cs" />
